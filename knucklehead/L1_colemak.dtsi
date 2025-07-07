@@ -1,26 +1,26 @@
 /**
- * Alpha Layer - QWERTY
+ * Alpha Layer - Colemak
  */
 
 / {
   keymap {
     compatible = "zmk,keymap";
 
-    qwerty_layer {
+    colemak_layer {
       display-name = "L1";
       bindings = <
 // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮   ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
 // │0              │1              │2              │3              │4              │5              │   │6              │7              │8              │9              │10             │11             │
-    &kp ESC         &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Z           &kp U           &kp I           &kp O           &kp P           &kp K_CANCEL
+    &kp ESC         &kp Q           &kp W           &kp F           &kp P           &kp G               &kp J           &kp L           &kp U           &kp Y           &kp SQT         &kp K_CANCEL
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 // │12             │13             │14             │15             │16             │17             │   │18             │19             │20             │21             │22             │23             │
-    &kp GRAVE       &hrml LALT A    &hrml LCMD S    &hrml LCTRL D   &hrml LSHFT F   &hrml MEH G         &hrmr MEH H      &hrmr LSHFT J  &hrmr LCTRL K   &hrmr LCMD L    &hrmr LALT SQT  &kp ENTER
+    &bkspc_del      &kp A           &hrml LCTRL R   &hrml LALT S    &hrml LCMD T    &hrml MEH D         &hrmr MEH H     &hrmr LCMD N    &hrmr LALT E    &hrmr LCTRL I   &kp O           &kp ENTER
 // ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
 // │24             │25             │26             │27             │28             │29             │   │30             │31             │32             │33             │34             │35             │
-    &csl Fn         &kp Y           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp SEMICOLON   &csl Fn
+    &csl Fn         &kp Z           &kp X           &kp C           &kp V           &kp B               &kp K           &kp M           &kp COMMA       &kp DOT         &kp SEMICOLON   &csl Fn
 // ╰───────────────┴───────────────┴───────────────┼───────────────┼───────────────┼───────────────┤   ├───────────────├───────────────┼───────────────┼───────────────┴───────────────┴───────────────╯
 //                                                 │36             │37             │38             │   │39             │40             │41             │
-                                                    &kp ESC         &lt L2 TAB      &mt LSHFT SPACE     &bkspc_del      &lt L2 ENTER    &kp DEL    
+                                                    &kp TAB         &mt LSHFT SPACE &smart_num L2 0     &smart_num L2 0 &smart_shift    &kp GRAVE
 //                                                 ╰───────────────┴───────────────┴───────────────╯   ╰───────────────┴───────────────┴───────────────╯
       >;
     };
