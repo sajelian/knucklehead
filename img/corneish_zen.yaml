@@ -38,10 +38,10 @@ layers:
   - {t: ;, s: ':'}
   - {t: Fn, h: '$$mdi:close-box$$'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:keyboard-tab$$', h: '1'}
+  - {t: '$$mdi:keyboard-tab$$', h: L2}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', h: '1'}
+  - {t: '$$mdi:keyboard-return$$', h: L2}
   - $$mdi:backspace-reverse-outline$$
   L2:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -81,10 +81,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:close-box$$', h: L2}
   - {t: '$$mdi:close-box$$', h: L2}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   Fn:
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
